@@ -1,0 +1,86 @@
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 160px);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.landing__hero {
+  max-width: 560px;
+}
+
+.landing__title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--terracotta);
+  margin-bottom: 16px;
+  letter-spacing: -1px;
+}
+
+.landing__subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.landing__tagline {
+  font-family: var(--font-main);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--sage);
+  margin-bottom: 40px;
+}
+
+.landing__actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.landing__btn {
+  padding: 12px 32px;
+  border-radius: 28px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: opacity 0.2s;
+}
+
+.landing__btn:hover {
+  opacity: 0.88;
+}
+
+.landing__btn--browse {
+  background: var(--sage);
+  color: var(--cream);
+}
+
+.landing__btn--sell {
+  background: var(--terracotta);
+  color: var(--cream);
+}
+
+.landing__motto-section {
+  margin-top: 60px;
+}
+
+.landing__motto {
+  font-family: var(--font-main);
+  font-style: italic;
+  color: var(--sage);
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+@media (max-width: 600px) {
+  .landing__title {
+    font-size: 2.2rem;
+  }
+
+  .landing__subtitle {
+    font-size: 1rem;
+  }
+}

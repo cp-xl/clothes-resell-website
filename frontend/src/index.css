@@ -1,0 +1,51 @@
+:root {
+  --terracotta: #C06C4D;
+  --sage: #829378;
+  --cream: #F5F2ED;
+  --font-main: 'Arimo', sans-serif;
+  --font-sub: 'Public Sans', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sub);
+  background-color: var(--cream);
+  color: #2d2d2d;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-main);
+  line-height: 1.2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-sub);
+  border: none;
+  background: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input, textarea {
+  font-family: var(--font-sub);
+  border: none;
+  outline: none;
+}
