@@ -25,7 +25,7 @@
   font-weight: 900;
   line-height: 0.95;
   letter-spacing: -2px;
-  font-style: italic;
+  font-style: normal;
 }
 
 .landing__title-indent {
@@ -152,14 +152,14 @@
   margin-top: 40px;
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--text-primary);
-  border-bottom: 1px solid var(--text-primary);
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent);
   padding-bottom: 2px;
   transition: opacity 0.2s;
 }
 
 .landing__products-link:hover {
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 /* ── How It Works ── */
@@ -204,8 +204,8 @@
 .landing__how-it-works-link {
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--text-primary);
-  border-bottom: 1px solid var(--text-primary);
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent);
   padding-bottom: 2px;
   transition: opacity 0.2s;
 }
@@ -251,8 +251,8 @@
 .landing__cta-link {
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--text-primary);
-  border-bottom: 1px solid var(--text-primary);
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent);
   padding-bottom: 2px;
   transition: opacity 0.2s;
 }

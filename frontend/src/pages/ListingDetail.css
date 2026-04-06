@@ -7,7 +7,7 @@
 .detail__back {
   display: inline-block;
   font-size: 0.9rem;
-  color: var(--text-primary);
+  color: var(--accent);
   margin-bottom: 24px;
   font-weight: 500;
   transition: opacity 0.2s;
@@ -55,7 +55,7 @@
 .detail__price {
   font-size: 1.3rem;
   font-weight: 700;
-  color: var(--text-primary);
+  color: var(--accent);
   margin-bottom: 20px;
 }
 

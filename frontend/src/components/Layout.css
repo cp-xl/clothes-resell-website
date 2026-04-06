@@ -51,7 +51,7 @@
 .footer__motto {
   font-family: var(--font-heading);
   font-style: italic;
-  color: var(--text-secondary);
+  color: var(--accent);
   font-size: 0.95rem;
 }
 

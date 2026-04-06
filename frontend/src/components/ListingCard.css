@@ -54,7 +54,7 @@
 
 .listing-card__price {
   font-weight: 600;
-  color: var(--text-primary);
+  color: var(--accent);
   font-size: 0.9rem;
   white-space: nowrap;
   margin-left: 12px;
