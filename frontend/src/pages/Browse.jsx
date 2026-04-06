@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
 import ListingCard from '../components/ListingCard.jsx'
+import RevealOnScroll from '../components/RevealOnScroll.jsx'
 import { fetchListings } from '../api/listings.js'
 import shoppingImg from '../assets/shopping.png'
 import coolGirlImg from '../assets/cool_girl.png'
@@ -63,17 +64,19 @@ function Browse() {
 
   return (
     <section className="browse">
-      <div className="browse__header">
-        <div className="browse__header-text">
-          <h2 className="browse__heading">The Circle</h2>
-          <p className="browse__sub">Pieces looking for a new home</p>
+      <RevealOnScroll>
+        <div className="browse__header">
+          <div className="browse__header-text">
+            <h2 className="browse__heading">The Circle</h2>
+            <p className="browse__sub">Pieces looking for a new home</p>
+          </div>
+          <img
+            src={shoppingImg}
+            alt=""
+            className="browse__header-img"
+          />
         </div>
-        <img
-          src={shoppingImg}
-          alt=""
-          className="browse__header-img"
-        />
-      </div>
+      </RevealOnScroll>
       {listings.length === 0 ? (
         <div className="browse__empty">
           <div className="browse__empty-avatars">
@@ -85,8 +88,10 @@ function Browse() {
       ) : (
         <>
           <div className="browse__grid">
-            {listings.map((item) => (
-              <ListingCard key={item.id} listing={item} />
+            {listings.map((item, index) => (
+              <RevealOnScroll key={item.id} staggerIndex={index % 4}>
+                <ListingCard listing={item} />
+              </RevealOnScroll>
             ))}
           </div>
           {cursor && (
