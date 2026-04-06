@@ -1,9 +1,13 @@
 :root {
-  --terracotta: #C06C4D;
-  --sage: #829378;
-  --cream: #F5F2ED;
-  --font-main: 'Arimo', sans-serif;
-  --font-sub: 'Public Sans', sans-serif;
+  --primary: #000000;
+  --bg-light: #FAF9F6;
+  --bg-dark: #000000;
+  --text-primary: #1a1a1a;
+  --text-secondary: #666666;
+  --text-on-dark: #FFFFFF;
+  --border: #E0E0E0;
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
 }
 
 *,
@@ -15,15 +19,15 @@
 }
 
 body {
-  font-family: var(--font-sub);
-  background-color: var(--cream);
-  color: #2d2d2d;
+  font-family: var(--font-body);
+  background-color: #FFFFFF;
+  color: var(--text-primary);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-main);
+  font-family: var(--font-heading);
   line-height: 1.2;
 }
 
@@ -34,7 +38,7 @@ a {
 
 button {
   cursor: pointer;
-  font-family: var(--font-sub);
+  font-family: var(--font-body);
   border: none;
   background: none;
 }
@@ -45,7 +49,7 @@ img {
 }
 
 input, textarea {
-  font-family: var(--font-sub);
+  font-family: var(--font-body);
   border: none;
   outline: none;
 }

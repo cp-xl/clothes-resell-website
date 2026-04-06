@@ -6,12 +6,12 @@
 
 .create__heading {
   font-size: 1.8rem;
-  color: var(--terracotta);
+  color: var(--text-primary);
   margin-bottom: 4px;
 }
 
 .create__sub {
-  color: #888;
+  color: var(--text-secondary);
   margin-bottom: 32px;
   font-size: 0.95rem;
 }
@@ -40,7 +40,7 @@
 }
 
 .create__upload-area:hover {
-  border-color: var(--sage);
+  border-color: var(--primary);
 }
 
 .create__upload-preview {
@@ -62,7 +62,7 @@
 
 .create__upload-icon {
   font-size: 2rem;
-  color: var(--sage);
+  color: var(--text-primary);
 }
 
 .create__upload-hint {
@@ -87,7 +87,7 @@
 }
 
 .create__label {
-  font-family: var(--font-main);
+  font-family: var(--font-heading);
   font-weight: 600;
   font-size: 0.9rem;
   color: #444;
@@ -111,32 +111,34 @@
 
 .create__input:focus,
 .create__textarea:focus {
-  border-color: var(--sage);
+  border-color: var(--primary);
 }
 
 .create__error {
-  color: var(--terracotta);
+  color: #cc0000;
   font-size: 0.85rem;
   font-weight: 500;
 }
 
 .create__submit {
-  background: var(--terracotta);
-  color: var(--cream);
+  background: var(--primary);
+  color: var(--text-on-dark);
   padding: 14px 28px;
-  border-radius: 28px;
-  font-weight: 600;
-  font-size: 1rem;
+  border-radius: 0;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   transition: opacity 0.2s;
   margin-top: 8px;
 }
 
 .create__submit:hover:not(:disabled) {
-  opacity: 0.88;
+  opacity: 0.8;
 }
 
 .create__submit:disabled {
-  opacity: 0.6;
+  opacity: 0.5;
   cursor: not-allowed;
 }
 
