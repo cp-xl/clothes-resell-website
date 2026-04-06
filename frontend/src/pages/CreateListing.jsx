@@ -135,24 +135,28 @@ function CreateListing() {
           </div>
 
           <div className="create__field">
-            <label htmlFor="description" className="create__label">Quick description</label>
-            <textarea
+            <label htmlFor="description" className="create__label">Size</label>
+            <select
               id="description"
               name="description"
-              placeholder="Two lines about the piece"
               value={form.description}
               onChange={handleChange}
-              className="create__textarea"
-              rows={2}
-              maxLength={200}
-            />
+              className="create__select"
+            >
+              <option value="">Select a size</option>
+              <option value="XS (EU 32-34)">XS (EU 32-34)</option>
+              <option value="S (EU 36-38)">S (EU 36-38)</option>
+              <option value="M (EU 40-42)">M (EU 40-42)</option>
+              <option value="L (EU 44-46)">L (EU 44-46)</option>
+              <option value="XL (EU 48-50)">XL (EU 48-50)</option>
+            </select>
           </div>
 
           <div className="create__field">
             <label htmlFor="backstory" className="create__label">
-              The garment&rsquo;s backstory
+              What&rsquo;s the story behind this piece?
             </label>
-            <p className="create__field-hint">Where did you find it?</p>
+            <p className="create__field-hint">You could start with where you found it...</p>
             <textarea
               id="backstory"
               name="backstory"
