@@ -1,6 +1,9 @@
 import { useState, useEffect, useCallback } from 'react'
 import ListingCard from '../components/ListingCard.jsx'
 import { fetchListings } from '../api/listings.js'
+import shoppingImg from '../assets/shopping.png'
+import coolGirlImg from '../assets/cool_girl.png'
+import stylishGirlImg from '../assets/stylish_girl.png'
 import './Browse.css'
 
 function Browse() {
@@ -60,10 +63,25 @@ function Browse() {
 
   return (
     <section className="browse">
-      <h2 className="browse__heading">The Circle</h2>
-      <p className="browse__sub">Pieces looking for a new home</p>
+      <div className="browse__header">
+        <div className="browse__header-text">
+          <h2 className="browse__heading">The Circle</h2>
+          <p className="browse__sub">Pieces looking for a new home</p>
+        </div>
+        <img
+          src={shoppingImg}
+          alt=""
+          className="browse__header-img"
+        />
+      </div>
       {listings.length === 0 ? (
-        <p className="browse__empty">Nothing here yet — be the first to pass something on.</p>
+        <div className="browse__empty">
+          <div className="browse__empty-avatars">
+            <img src={coolGirlImg} alt="" className="browse__empty-avatar" />
+            <img src={stylishGirlImg} alt="" className="browse__empty-avatar" />
+          </div>
+          <p className="browse__empty-text">Nothing here yet — be the first to pass something on.</p>
+        </div>
       ) : (
         <>
           <div className="browse__grid">
