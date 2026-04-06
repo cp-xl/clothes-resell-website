@@ -75,7 +75,7 @@
 }
 
 .browse__load-more-btn {
-  background: var(--primary);
+  background: var(--accent);
   color: var(--text-on-dark);
   padding: 12px 32px;
   border-radius: 0;

@@ -1,13 +1,14 @@
 :root {
   --primary: #000000;
+  --accent: #A52A2A;
   --bg-light: #FAF9F6;
   --bg-dark: #000000;
   --text-primary: #1a1a1a;
   --text-secondary: #666666;
   --text-on-dark: #FFFFFF;
   --border: #E0E0E0;
-  --font-heading: 'Playfair Display', serif;
-  --font-body: 'Inter', sans-serif;
+  --font-heading: 'Arimo', sans-serif;
+  --font-body: 'Arimo', sans-serif;
 }
 
 *,

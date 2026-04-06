@@ -77,11 +77,11 @@ infra/             Terraform (AWS provider ~> 5.0)
 ## Branding & Design
 
 - **Brand:** "NewHome" (site name), by "chewie&co" (company)
-- **Colors:** Black `#000000` (primary), Off-white `#FAF9F6` (light bg), White `#FFFFFF` (page bg), Gray `#E0E0E0` (borders)
-- **Fonts:** Playfair Display (headings / editorial serif), Inter (body / clean sans-serif)
-- CSS variables are defined in `frontend/src/index.css` as `--primary`, `--bg-light`, `--bg-dark`, `--text-primary`, `--text-secondary`, `--text-on-dark`, `--border`, `--font-heading`, `--font-body`
+- **Colors:** Black `#000000` (primary), Brown `#A52A2A` (accent — links, prices, CTAs), Off-white `#FAF9F6` (light bg), White `#FFFFFF` (page bg), Gray `#E0E0E0` (borders)
+- **Fonts:** Arimo (headings and body)
+- CSS variables are defined in `frontend/src/index.css` as `--primary`, `--accent`, `--bg-light`, `--bg-dark`, `--text-primary`, `--text-secondary`, `--text-on-dark`, `--border`, `--font-heading`, `--font-body`
 - Each component/page has a co-located `.css` file (BEM-ish naming)
-- **Assets:** `recycling-logo.svg` and `hero-banner.jpg` in `frontend/public/` (user-provided, not AI-generated)
+- **Assets:** Illustrations and photos in `frontend/src/assets/` (user-provided, not AI-generated)
 
 ## Dependencies Policy
 
