@@ -21,7 +21,10 @@ export async function createListing(data) {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data),
   })
-  if (!res.ok) throw new Error('Failed to create listing')
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}))
+    throw new Error(err.error || 'Failed to create listing')
+  }
   return res.json()
 }
 
@@ -31,7 +34,10 @@ export async function getUploadUrl(filename, contentType) {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ filename, contentType }),
   })
-  if (!res.ok) throw new Error('Failed to get upload URL')
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}))
+    throw new Error(err.error || 'Failed to get upload URL')
+  }
   return res.json()
 }
 

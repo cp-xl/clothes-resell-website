@@ -70,8 +70,8 @@ function CreateListing() {
       })
 
       navigate(`/listing/${listing.id}`)
-    } catch {
-      setError('Something went wrong. Please try again.')
+    } catch (err) {
+      setError(err.message || 'Something went wrong. Please try again.')
     } finally {
       setSubmitting(false)
     }
