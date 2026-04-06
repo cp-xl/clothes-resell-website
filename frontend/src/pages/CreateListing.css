@@ -98,6 +98,7 @@
   color: #999;
 }
 
+.create__select,
 .create__input,
 .create__textarea {
   background: #fff;
@@ -109,6 +110,7 @@
   resize: none;
 }
 
+.create__select:focus,
 .create__input:focus,
 .create__textarea:focus {
   border-color: var(--accent);
