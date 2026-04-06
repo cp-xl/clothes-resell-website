@@ -76,10 +76,12 @@ infra/             Terraform (AWS provider ~> 5.0)
 
 ## Branding & Design
 
-- **Colors:** Terracotta `#C06C4D`, Sage `#829378`, Cream `#F5F2ED`
-- **Fonts:** Arimo (headings / main), Public Sans (body / sub)
-- CSS variables are defined in `frontend/src/index.css` as `--terracotta`, `--sage`, `--cream`, `--font-main`, `--font-sub`
+- **Brand:** "NewHome" (site name), by "chewie&co" (company)
+- **Colors:** Black `#000000` (primary), Off-white `#FAF9F6` (light bg), White `#FFFFFF` (page bg), Gray `#E0E0E0` (borders)
+- **Fonts:** Playfair Display (headings / editorial serif), Inter (body / clean sans-serif)
+- CSS variables are defined in `frontend/src/index.css` as `--primary`, `--bg-light`, `--bg-dark`, `--text-primary`, `--text-secondary`, `--text-on-dark`, `--border`, `--font-heading`, `--font-body`
 - Each component/page has a co-located `.css` file (BEM-ish naming)
+- **Assets:** `recycling-logo.svg` and `hero-banner.jpg` in `frontend/public/` (user-provided, not AI-generated)
 
 ## Dependencies Policy
 

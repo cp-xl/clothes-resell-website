@@ -8,47 +8,34 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 40px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 18px 40px;
+  background: var(--bg-dark);
 }
 
-.logo {
-  font-family: var(--font-main);
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--terracotta);
-  letter-spacing: -0.5px;
+.header__logo {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-on-dark);
+  letter-spacing: 1px;
 }
 
-.nav {
+.header__nav {
   display: flex;
   align-items: center;
   gap: 28px;
 }
 
-.nav-link {
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: #555;
-  transition: color 0.2s;
-}
-
-.nav-link:hover {
-  color: var(--terracotta);
-}
-
-.nav-link--sell {
-  background: var(--terracotta);
-  color: var(--cream);
-  padding: 8px 22px;
-  border-radius: 24px;
-  font-weight: 600;
+.header__link {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--text-on-dark);
+  letter-spacing: 0.5px;
   transition: opacity 0.2s;
 }
 
-.nav-link--sell:hover {
-  color: var(--cream);
-  opacity: 0.9;
+.header__link:hover {
+  opacity: 0.7;
 }
 
 .main {
@@ -58,22 +45,22 @@
 .footer {
   text-align: center;
   padding: 32px 20px;
-  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  border-top: 1px solid var(--border);
 }
 
-.footer-motto {
-  font-family: var(--font-main);
+.footer__motto {
+  font-family: var(--font-heading);
   font-style: italic;
-  color: var(--sage);
+  color: var(--text-secondary);
   font-size: 0.95rem;
 }
 
 @media (max-width: 600px) {
   .header {
-    padding: 16px 20px;
+    padding: 14px 20px;
   }
 
-  .nav {
+  .header__nav {
     gap: 16px;
   }
 }

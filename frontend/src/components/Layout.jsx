@@ -5,17 +5,17 @@ function Layout() {
   return (
     <div className="layout">
       <header className="header">
-        <Link to="/" className="logo">NewHome</Link>
-        <nav className="nav">
-          <Link to="/browse" className="nav-link">Browse</Link>
-          <Link to="/sell" className="nav-link nav-link--sell">Sell</Link>
+        <Link to="/" className="header__logo">chewie&co</Link>
+        <nav className="header__nav">
+          <Link to="/browse" className="header__link">Browse</Link>
+          <Link to="/sell" className="header__link">Sell</Link>
         </nav>
       </header>
       <main className="main">
         <Outlet />
       </main>
       <footer className="footer">
-        <p className="footer-motto">Wear it, pass it on.</p>
+        <p className="footer__motto">Wear it, pass it on.</p>
       </footer>
     </div>
   )

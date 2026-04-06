@@ -7,13 +7,14 @@
 .detail__back {
   display: inline-block;
   font-size: 0.9rem;
-  color: var(--sage);
+  color: var(--text-primary);
   margin-bottom: 24px;
   font-weight: 500;
+  transition: opacity 0.2s;
 }
 
 .detail__back:hover {
-  color: var(--terracotta);
+  opacity: 0.6;
 }
 
 .detail__content {
@@ -27,7 +28,7 @@
   aspect-ratio: 3 / 4;
   border-radius: 12px;
   overflow: hidden;
-  background: #e8e5e0;
+  background: #f0f0f0;
 }
 
 .detail__image {
@@ -47,38 +48,38 @@
 
 .detail__title {
   font-size: 1.6rem;
-  color: #2d2d2d;
+  color: var(--text-primary);
   margin-bottom: 8px;
 }
 
 .detail__price {
   font-size: 1.3rem;
   font-weight: 700;
-  color: var(--terracotta);
+  color: var(--text-primary);
   margin-bottom: 20px;
 }
 
 .detail__description {
-  color: #666;
+  color: var(--text-secondary);
   font-size: 0.95rem;
   margin-bottom: 24px;
   line-height: 1.6;
 }
 
 .detail__backstory {
-  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  border-top: 1px solid var(--border);
   padding-top: 20px;
 }
 
 .detail__backstory-label {
   font-size: 0.9rem;
-  color: var(--sage);
+  color: var(--text-primary);
   font-weight: 600;
   margin-bottom: 8px;
 }
 
 .detail__backstory p {
-  color: #666;
+  color: var(--text-secondary);
   font-size: 0.95rem;
   line-height: 1.6;
 }

@@ -1,19 +1,25 @@
+.listing-card__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .listing-card {
   display: block;
-  border-radius: 12px;
+  border-radius: 16px;
   overflow: hidden;
+  border: 1px solid var(--border);
   background: #fff;
-  transition: box-shadow 0.2s;
+  transition: border-color 0.2s;
 }
 
 .listing-card:hover {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-color: #999;
 }
 
 .listing-card__image-wrap {
   aspect-ratio: 3 / 4;
   overflow: hidden;
-  background: #e8e5e0;
+  background: #f0f0f0;
 }
 
 .listing-card__image {
@@ -33,19 +39,29 @@
 }
 
 .listing-card__info {
-  padding: 12px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
 }
 
 .listing-card__title {
-  font-family: var(--font-main);
-  font-size: 0.95rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
   font-weight: 500;
-  margin-bottom: 4px;
-  color: #2d2d2d;
+  color: var(--text-primary);
 }
 
 .listing-card__price {
   font-weight: 600;
-  color: var(--terracotta);
-  font-size: 0.95rem;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  white-space: nowrap;
+  margin-left: 12px;
+}
+
+.listing-card__seller {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  padding: 8px 16px 0;
 }
