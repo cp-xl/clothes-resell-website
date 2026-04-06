@@ -47,7 +47,6 @@ export async function handler(event) {
     Bucket: BUCKET,
     Key: key,
     ContentType: contentType,
-    ContentLength: MAX_FILE_SIZE,
   })
 
   const uploadUrl = await getSignedUrl(s3, command, { expiresIn: 300 })
