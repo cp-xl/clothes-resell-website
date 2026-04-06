@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { fetchListings } from '../api/listings.js'
 import ListingCard from '../components/ListingCard.jsx'
+import recycleLogo from '../assets/recycle.svg'
+import heroBanner from '../assets/newhome_clothes_background.png'
 import './Landing.css'
 
 function Landing() {
@@ -25,9 +27,8 @@ function Landing() {
             New<br />
             <span className="landing__title-indent">Homes</span>
           </h1>
-          {/* Place recycling-logo.svg in frontend/public/ */}
           <img
-            src="/recycling-logo.svg"
+            src={recycleLogo}
             alt="Recycle"
             className="landing__hero-logo"
           />
@@ -36,9 +37,8 @@ function Landing() {
       </section>
 
       <section className="landing__banner">
-        {/* Place hero-banner.jpg in frontend/public/ */}
         <img
-          src="/hero-banner.jpg"
+          src={heroBanner}
           alt="Clothes on a rack"
           className="landing__banner-image"
         />
